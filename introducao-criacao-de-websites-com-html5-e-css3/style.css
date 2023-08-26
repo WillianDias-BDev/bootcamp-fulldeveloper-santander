@@ -1,0 +1,10 @@
+#title,
+.subtitle,
+.post_title {
+    color: rgba(150, 150, 150, 0.928);
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic
+}
