@@ -1,24 +1,24 @@
-// //tipos de funcao
+//tipos de funcao
 
-// //funcao declarativas
+//funcao declarativas
 
-// function funcao() {
-//     console.log('tudo certo jovem')
-// }
+function funcao() {
+    console.log('tudo certo jovem')
+}
 
-// funcao();
+funcao();
 
-// //expressao funcao
-// //com nomeação
-// var funcao = function () {
-//     console.log('sou uma funcao de expressão.')
-// }
+//expressao funcao
+//com nomeação
+var funcao = function () {
+    console.log('sou uma funcao de expressão.')
+}
 
-// funcao()
+funcao()
 
-// //arrow function
-// var funcao = () => {
-//     console.log('sou uma arrow function');
-// }
+//arrow function
+var funcao = () => {
+    console.log('sou uma arrow function');
+}
 
-// funcao()
+funcao()
