@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+
 .normal {
     background-color: #A6A877;
 }
@@ -148,6 +149,7 @@
     border-radius: 1rem;
     color: white;
 }
+
 
 @media screen and (min-width: 380px) {
     .pokemons {
