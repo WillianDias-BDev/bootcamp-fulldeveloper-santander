@@ -1,0 +1,50 @@
+.name {
+    font-family: 'Bodoni Moda', serif;
+
+}
+
+
+
+.others {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+.pokemon {
+    margin-top: 28rem;
+    justify-content: center;
+    /* Ajuste para a posição horizontal desejada */
+    align-items: center;
+    /* Ajuste para a posição vertical desejada */
+    height: 300px;
+    /* Altura do container */
+
+}
+
+.type {
+    margin-left: 2.5rem;
+}
+
+.details {
+    display: flex;
+    justify-content: flex-start;
+    /* Move os elementos para a esquerda */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 200px;
+    /* Altura do container */
+}
+
+.pokemon-name {
+    position: absolute;
+    top: 50px;
+    /* Defina a posição vertical desejada */
+    left: 20px;
+    /* Defina a posição horizontal desejada */
+}
+
+.content span {
+    margin-right: 70px;
+    /* Adiciona margem à direita de cada elemento */
+}
