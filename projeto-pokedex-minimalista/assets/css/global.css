@@ -1,14 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #c2bfe5;
+    min-height: 100%;
+    border: 5px dashed red;
+    width: 100%;
 
+}
+
+html {
+    height: 100%;
 }
 
 .name {
     font-family: 'Bodoni Moda', serif;
 
 }
-
-
 
 .others {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -30,15 +42,15 @@ body {
     /* Move os elementos para a esquerda */
     align-items: center;
     /* Centraliza verticalmente */
-    height: 200px;
+    height: 100%;
     /* Altura do container */
 }
 
 .pokemon-name {
-    position: absolute;
-    top: 550px;
+    position: relative;
+    top: 520px;
     /* Defina a posição vertical desejada */
-    left: 100px;
+    left: center;
     /* Defina a posição horizontal desejada */
 }
 
@@ -49,22 +61,16 @@ body {
 }
 
 .content {
-    position: absolute;
-    top: 750px;
+    position: relative;
+    top: -200px;
     /* Defina a posição vertical desejada */
 }
 
-.img img {
-    z-index: 1;
-    position: absolute;
-    top: 200px;
-    /* Defina a posição vertical desejada */
-    left: 20px;
-    /* Defina a posição horizontal desejada */
-    width: 350px;
-    height: 350px;
+.container img {
+    max-width: 100%;
     filter: saturate(150%);
-    /* Aumenta a saturação */
+    height: auto;
+    top: -90px;
 
 }
 
@@ -79,13 +85,13 @@ body {
     /* Define a posição do quadrado no centro do elemento body */
     margin: auto;
     border-radius: 50%;
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: 0px;
     /* Defina a posição vertical desejada */
-    left: 20px;
+    right: 22px;
     /* Defina a posição horizontal desejada */
     /* Define uma ordem de empilhamento superior (um valor maior) para aparecer na frente */
-    z-index: -1;
+    z-index: 0;
 }
 
 
