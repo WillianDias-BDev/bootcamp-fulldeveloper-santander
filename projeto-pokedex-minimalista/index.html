@@ -17,7 +17,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700&display=swap"
         rel="stylesheet">
-
+    <!---fonte encode sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200&display=swap" rel="stylesheet">
     <!--fonte jakarta-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,42 +30,26 @@
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="seu-estilo.css">
-        <title>Pokedex</title>
-    </head>
-
-    <body>
-        <div class="container">
-            <section class="circle"></section>
-            <section class="img">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                    alt="Bulbasaur">
+    <div class="container">
+        <section class="circle"></section>
+        <section class="img">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                alt="Bulbasaur" </section>
+        </section>
+        <section class="pokemon-name">
+            <span class="number">#001</span>
+            <h1 class="name">Bulbasaur</h1>
+            <p class="type">Type: Grass</p>
+        </section>
+        <section class="others">
+            <section class="content">
+                <span class="overview">Overview</span>
+                <span class="stats">Stats</span>
+                <span class="abilities">Abilities</span>
             </section>
-            <section class="pokemon-name">
-                <span class="number">#001</span>
-                <h1 class="name">Bulbasaur</h1>
-                <p class="type">Type: Grass</p>
-            </section>
-            <section class="others">
-                <section class="details">
-                    <section class="content">
-                        <span class="overview">Overview</span>
-                        <span class="stats">Stats</span>
-                        <span class="abilities">Abilities</span>
-                    </section>
-                </section>
-            </section>
-        </div>
+        </section>
+    </div>
 
-    </body>
-
-    </html>
 
 
     <script src="/assets/js/main.js"></script>
