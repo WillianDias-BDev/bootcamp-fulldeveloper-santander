@@ -28,7 +28,7 @@ body {
 }
 
 
-.container {
+.background {
     background-color: #c2bfe5;
     max-width: 100%;
     max-height: 100%;
@@ -38,9 +38,10 @@ body {
     margin-bottom: 20px;
 }
 
-.container {}
 
-.container section {}
+
+
+
 
 
 .name {
@@ -128,7 +129,7 @@ body {
 }
 
 
-.container .number {
+.carrossel .number {
     margin-left: 80px;
     font-family: 'Bodoni Moda', serif;
     background-color: rgba(0, 0, 0, 0.183);
@@ -162,4 +163,17 @@ body {
     /* Adicione qualquer estilo de fonte ou tamanho desejado */
     margin: 5px 0;
     /* Espaçamento vertical entre as palavras */
+}
+
+.pokemon {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.carrossel-wrapper {
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    /* Suporte à rolagem suave em dispositivos móveis */
 }

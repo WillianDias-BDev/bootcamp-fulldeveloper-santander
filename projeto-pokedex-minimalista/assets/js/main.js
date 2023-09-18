@@ -1,10 +1,13 @@
-const box = document.querySelector('.container');
-const pokemons = document.querySelector('.container .pokemon')
+const carrossel = document.querySelector('.carrossel');
+const carrosselWrapper = document.querySelector('.carrossel-wrapper');
 
-let contador = 0
+carrosselWrapper.addEventListener('scroll', () => {
+    const scrollLeft = carrosselWrapper.scrollLeft;
+    const sectionWidth = carrossel.clientWidth / 6; /* 6 é o número de sections .pokemon */
 
-function slider() {
-    contador++;
+    // Calcula a posição da section atual
+    const currentSection = Math.floor(scrollLeft / sectionWidth);
 
-    box.css.transform = `translateX (${-contador * }px)`
-}
+    // Move o carrossel para a section atual
+    carrossel.style.transform = `translateX(-${currentSection * sectionWidth}px)`;
+});
