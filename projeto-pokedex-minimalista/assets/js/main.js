@@ -1,13 +1,56 @@
-const carrossel = document.querySelector('.carrossel');
-const carrosselWrapper = document.querySelector('.carrossel-wrapper');
 
-carrosselWrapper.addEventListener('scroll', () => {
-    const scrollLeft = carrosselWrapper.scrollLeft;
-    const sectionWidth = carrossel.clientWidth / 6; /* 6 é o número de sections .pokemon */
+document.addEventListener("DOMContentLoaded", function () {
+    const pokemonSections = document.querySelectorAll(".pokemon");
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+    let currentPage = 0;
 
-    // Calcula a posição da section atual
-    const currentSection = Math.floor(scrollLeft / sectionWidth);
+    // Função para mostrar a página atual
+    const showPage = () => {
+        pokemonSections.forEach((section, index) => {
+            if (index === currentPage) {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        });
+    };
 
-    // Move o carrossel para a section atual
-    carrossel.style.transform = `translateX(-${currentSection * sectionWidth}px)`;
+    // Event listener para o botão "Anterior"
+    prevButton.addEventListener("click", () => {
+        if (currentPage > 0) {
+            currentPage--;
+            showPage();
+        }
+    });
+
+    // Event listener para o botão "Próxima"
+    nextButton.addEventListener("click", () => {
+        if (currentPage < pokemonSections.length - 1) {
+            currentPage++;
+            showPage();
+        }
+    });
+
+    // Exibe a primeira página inicialmente
+    showPage();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const pokemonSections = document.querySelectorAll(".pokemon");
+    let currentPage = 0;
+
+    const showPage = () => {
+        pokemonSections.forEach((section, index) => {
+            if (index === currentPage) {
+                section.classList.add("active", "transition");
+            } else {
+                section.classList.remove("active", "transition");
+            }
+        });
+    };
+
+    // Resto do seu código de evento aqui
+});
+
+

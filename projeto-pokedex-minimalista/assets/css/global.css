@@ -38,12 +38,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
-
 .name {
     font-family: 'Bodoni Moda', serif;
     font-size: 50px;
@@ -129,7 +123,7 @@ body {
 }
 
 
-.carrossel .number {
+.pokemon-name .number {
     margin-left: 80px;
     font-family: 'Bodoni Moda', serif;
     background-color: rgba(0, 0, 0, 0.183);
@@ -165,15 +159,13 @@ body {
     /* Espaçamento vertical entre as palavras */
 }
 
-.pokemon {
+
+.container {
+    position: relative;
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    display: flex;
 }
 
-.carrossel-wrapper {
-    overflow-x: scroll;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    /* Suporte à rolagem suave em dispositivos móveis */
+.transition {
+    transition: transform 0.3s ease;
 }
