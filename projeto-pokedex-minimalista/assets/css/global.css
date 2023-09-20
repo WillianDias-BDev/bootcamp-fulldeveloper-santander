@@ -5,6 +5,7 @@
 }
 
 
+
 body {
     display: flex;
     align-items: center;
@@ -166,6 +167,15 @@ body {
     display: flex;
 }
 
-.transition {
-    transition: transform 0.3s ease;
+/* Estilo base para as seções */
+section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Estilo para a seção ativa */
+section.active {
+    display: block;
+    opacity: 1;
 }
