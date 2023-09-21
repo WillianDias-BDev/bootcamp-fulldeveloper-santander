@@ -5,12 +5,11 @@
 }
 
 
-
 body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10%;
+    margin: 5%;
     min-height: 100vh;
     background-color: #e8e3e7;
 }
@@ -160,22 +159,47 @@ body {
     /* Espaçamento vertical entre as palavras */
 }
 
+.app-container {
+    width: 38%;
+    overflow: hidden;
+    /* Impede que o conteúdo animado fora do escopo seja visível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
 
 .container {
-    position: relative;
     width: 100%;
     display: flex;
+    transition: transform 0.5s ease;
+    /* Transição suave para o contêiner */
 }
 
-/* Estilo base para as seções */
-section {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+.page {
+    width: 100%;
+    flex-shrink: 0;
+    /* Impede que as páginas reduzam de tamanho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    /* Transição suave para cada página */
 }
 
-/* Estilo para a seção ativa */
-section.active {
-    display: block;
-    opacity: 1;
+.page {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Remova a transição de transformação aqui */
+}
+
+.page.hidden {
+    transform: translateX(100%);
+    /* Esconda as páginas que não estão na visualização */
+    transition: transform 0.5s ease;
+    /* Adicione a transição apenas a páginas ocultas */
 }

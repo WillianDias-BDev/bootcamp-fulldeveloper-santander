@@ -1,74 +1,39 @@
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const pokemonSections = document.querySelectorAll(".pokemon");
-//     const prevButton = document.getElementById("prevButton");
-//     const nextButton = document.getElementById("nextButton");
-//     let currentPage = 0;
-
-//     // Função para mostrar a página atual
-//     const showPage = () => {
-//         pokemonSections.forEach((section, index) => {
-//             if (index === currentPage) {
-//                 section.style.display = "block";
-//             } else {
-//                 section.style.display = "none";
-//             }
-//         });
-//     };
-
-//     // Event listener para o botão "Anterior"
-//     prevButton.addEventListener("click", () => {
-//         if (currentPage > 0) {
-//             currentPage--;
-//             showPage();
-//         }
-//     });
-
-//     // Event listener para o botão "Próxima"
-//     nextButton.addEventListener("click", () => {
-//         if (currentPage < pokemonSections.length - 1) {
-//             currentPage++;
-//             showPage();
-//         }
-//     });
-
-//     // Exibe a primeira página inicialmente
-//     showPage();
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const pokemonSections = document.querySelectorAll(".pokemon");
     const prevButton = document.getElementById("prevButton");
     const nextButton = document.getElementById("nextButton");
+    const container = document.querySelector(".container");
+    const pages = document.querySelectorAll(".page");
     let currentPage = 0;
 
-    // Função para mostrar a página atual com transição suave
-    const showPageWithTransition = () => {
-        pokemonSections.forEach((section, index) => {
-            if (index === currentPage) {
-                section.classList.add("active");
-            } else {
-                section.classList.remove("active");
-            }
-        });
-    };
-
-    // Event listener para o botão "Anterior"
     prevButton.addEventListener("click", () => {
         if (currentPage > 0) {
             currentPage--;
-            showPageWithTransition();
+            updatePageTransform();
         }
     });
 
-    // Event listener para o botão "Próxima"
     nextButton.addEventListener("click", () => {
-        if (currentPage < pokemonSections.length - 1) {
+        if (currentPage < pages.length - 1) {
             currentPage++;
-            showPageWithTransition();
+            updatePageTransform();
         }
     });
+
+    function updatePageTransform() {
+        const xOffset = -currentPage * 100; // 100% de deslocamento por página
+        container.style.transform = `translateX(${xOffset}%)`;
+        pages.forEach((page, index) => {
+            if (index === currentPage) {
+                page.style.transform = "translateX(0%)"; // Página atual visível
+            } else {
+                page.style.transform = `translateX(100%)`; // Páginas anteriores deslocadas para a direita
+            }
+        });
+    }
 
     // Exibe a primeira página inicialmente
-    showPageWithTransition();
+    updatePageTransform();
 });
+
