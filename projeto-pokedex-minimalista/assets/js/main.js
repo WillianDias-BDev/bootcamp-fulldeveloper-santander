@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (index === currentPage) {
                 page.style.transform = "translateX(0%)"; // Página atual visível
             } else {
-                page.style.transform = `translateX(100%)`; // Páginas anteriores deslocadas para a direita
+                page.style.transform = `translateX(0%)`; // Páginas anteriores deslocadas para a direita
             }
         });
     }
