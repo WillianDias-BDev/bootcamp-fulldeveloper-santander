@@ -240,7 +240,35 @@ header div {
     /* Ajuste a margem desejada entre as palavras */
 }
 
+.overview-bar .toggle_btn {
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+}
+
 .action_btn:hover {
     scale: 1.05;
     color: #ffffff;
 }
+
+.action_btn:active {
+    scale: 0.95;
+}
+
+/*drop down menu*/
+
+.dropdown_menu {
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 0.5;
+    border-radius: 10%;
+    top: -300px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+
+
+/*responsive design*/
+@media(max-width: 998px) {}
