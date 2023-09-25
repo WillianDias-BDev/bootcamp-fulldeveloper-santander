@@ -35,176 +35,412 @@
             <div class="container">
                 <section class="page">
                     <div class="pokemon">
-                        <div class="border">
-                            <div class="background">
-                                <section class="circle"></section>
-                                <section class="img">
-                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                                        alt="Bulbasaur" </section>
-                                </section>
-                                <section class="pokemon-name">
-                                    <span class="number">#001</span>
-                                    <h1 class="name">Bulbasaur</h1>
-                                    <div class="detail">
-                                        <ol class="types">
-                                            <span class="type">Type: Grass</span>
-                                            <span class="type">Type: Poison</span>
-                                        </ol>
-                                </section>
-                            </div>
-                            <header>
-                                <div class="overview-bar">
-                                    <a href="#" class="action_btn">Overview</a>
-                                    <div class="dropdown_menu">
-                                        <ul class="overview-content">
-                                            <!--conteudo overview-->
-                                            <p>Esta é a primeira linha de exemplo.</p>
-                                            <p>Esta é a segunda linha de exemplo.</p>
-                                            <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
-                                            </p>
-                                            <p>A quarta linha também faz parte deste exemplo.</p>
-                                            <p>A quinta linha demonstra que podemos ter várias linhas.</p>
-                                            <p>Sexta linha: mais texto de exemplo.</p>
-                                            <p>Sétima linha para continuar nosso exemplo.</p>
-                                            <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
-                                            <p>Nona linha de exemplo para completar as 10 linhas.</p>
-                                            <p>Esta é a décima e última linha deste texto de exemplo.</p>
-
-                                            <a href="#" class="action_btn">Overview</a>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="stats-bar">
-                                    <div class="stats"><a href="a">Stats</a></div>
-                                    <ul class="stats-content">
-                                        <!--conteudo stats-->
-                                    </ul>
-                                </div>
-                                <div class="abilities-bar">
-                                    <div class="abilities"><a href="a">Abilities</a></div>
-                                    <ul class="abilities-content">
-                                        <!--conteudo stats-->
-                                    </ul>
-                                </div>
-                            </header>
+                        <div class="background">
+                            <section class="circle"></section>
+                            <section class="img">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                                    alt="Bulbasaur" </section>
+                            </section>
+                            <section class="pokemon-name">
+                                <span class="number">#001</span>
+                                <h1 class="name">Bulbasaur</h1>
+                                <div class="detail">
+                                    <ol class="types">
+                                        <span class="type">Type: Grass</span>
+                                        <span class="type">Type: Poison</span>
+                                    </ol>
+                            </section>
                         </div>
+                        <header>
+                            <div class="overview-bar">
+                                <ul class="overview-content">
+                                    <!--conteudo overview-->
+                                    <p>Esta é a primeira linha de exemplo.</p>
+                                    <p>Esta é a segunda linha de exemplo.</p>
+                                    <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                    </p>
+                                    <p>A quarta linha também faz parte deste exemplo.</p>
+                                    <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                    <p>Sexta linha: mais texto de exemplo.</p>
+                                    <p>Sétima linha para continuar nosso exemplo.</p>
+                                    <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                    <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                    <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                    <a href="#" class="action_btn">Overview</a>
+                                </ul>
+                                <a href="#" class="action_btn">Overview</a>
+                                <div class="toggle_btn">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <div class="dropdown_menu">
+                                    <ul class="open">
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btn">Overview</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="stats-bar">
+                                <div class="stats"><a href="a">Stats</a></div>
+                                <ul class="stats-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                            <div class="abilities-bar">
+                                <div class="abilities"><a href="a">Abilities</a></div>
+                                <ul class="abilities-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                        </header>
+
+                        <script>
+
+
+                            toggleBtn.onclick = function () {
+                                dropdown_menu.classList.toggle('open')
+                            }
+                        </script>
                     </div>
                 </section>
                 <section class="page">
                     <div class="pokemon">
-                        <div class="border">
-                            <div class="background">
-                                <section class="circle"></section>
-                                <section class="img">
-                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
-                                        alt="Bulbasaur" </section>
-                                </section>
-                                <section class="pokemon-name">
-                                    <span class="number">#002</span>
-                                    <h1 class="name">Yvisaur</h1>
-                                    <div class="detail">
-                                        <ol class="types">
-                                            <span class="type">Type: Grass</span>
-                                            <span class="type">Type: Poison</span>
-                                        </ol>
-                                </section>
-                                <section class="others">
-                                    <section class="content">
-                                        <span class="overview">Overview</span>
-                                        <span class="stats">Stats</span>
-                                        <span class="abilities">Abilities</span>
-                                    </section>
+                        <div class="background">
+                            <section class="circle"></section>
+                            <section class="img">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                                    alt="Bulbasaur" </section>
+                            </section>
+                            <section class="pokemon-name">
+                                <span class="number">#001</span>
+                                <h1 class="name">Bulbasaur</h1>
+                                <div class="detail">
+                                    <ol class="types">
+                                        <span class="type">Type: Grass</span>
+                                        <span class="type">Type: Poison</span>
+                                    </ol>
+                            </section>
+                        </div>
+                        <header>
+                            <div class="overview-bar">
+                                <a href="#" class="action_btn">Overview</a>
+                                <div class="toggle_btn">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <div class="dropdown_menu">
+                                    <ul class="overview-content">
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btn">Overview</a>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                        </div>
+                            <div class="stats-bar">
+                                <div class="stats"><a href="a">Stats</a></div>
+                                <ul class="stats-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                            <div class="abilities-bar">
+                                <div class="abilities"><a href="a">Abilities</a></div>
+                                <ul class="abilities-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                        </header>
+
+                        <script>
+
+                            toggleBtn.onclick = function () {
+                                dropdown_menu.classList.toggle('open')
+                            }
+                        </script>
+                    </div>
                 </section>
                 <section class="page">
-                    <div class=" pokemon">
-                        <div class="border">
-                            <div class="background">
-                                <section class="circle"></section>
-                                <section class="img">
-                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
-                                        alt="Bulbasaur" </section>
-                                </section>
-                                <section class="pokemon-name">
-                                    <span class="number">#003</span>
-                                    <h1 class="name">Bulbasaur</h1>
-                                    <div class="detail">
-                                        <ol class="types">
-                                            <span class="type">Type: Grass</span>
-                                            <span class="type">Type: Poison</span>
-                                        </ol>
-                                </section>
-                                <section class="others">
-                                    <section class="content">
-                                        <span class="overview">Overview</span>
-                                        <span class="stats">Stats</span>
-                                        <span class="abilities">Abilities</span>
-                                    </section>
+                    <div class="pokemon">
+                        <div class="background">
+                            <section class="circle"></section>
+                            <section class="img">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                                    alt="Bulbasaur" </section>
+                            </section>
+                            <section class="pokemon-name">
+                                <span class="number">#001</span>
+                                <h1 class="name">Bulbasaur</h1>
+                                <div class="detail">
+                                    <ol class="types">
+                                        <span class="type">Type: Grass</span>
+                                        <span class="type">Type: Poison</span>
+                                    </ol>
+                            </section>
+                        </div>
+                        <header>
+                            <div class="overview-bar">
+                                <a href="#" class="action_btn">Overview</a>
+                                <div class="toggle_btn">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <div class="dropdown_menu">
+                                    <ul class="overview-content">
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btn">Overview</a>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                        </div>
+                            <div class="stats-bar">
+                                <div class="stats"><a href="a">Stats</a></div>
+                                <ul class="stats-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                            <div class="abilities-bar">
+                                <div class="abilities"><a href="a">Abilities</a></div>
+                                <ul class="abilities-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                        </header>
+
+                        <script>
+
+                            toggleBtn.onclick = function () {
+                                dropdown_menu.classList.toggle('open')
+                            }
+                        </script>
+                    </div>
                 </section>
                 <section class="page">
-                    <div class=" pokemon">
-                        <div class="border">
-                            <div class="background">
-                                <section class="circle"></section>
-                                <section class="img">
-                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
-                                        alt="Bulbasaur" </section>
-                                </section>
-                                <section class="pokemon-name">
-                                    <span class="number">#004</span>
-                                    <h1 class="name">Bulbasaur</h1>
-                                    <div class="detail">
-                                        <ol class="types">
-                                            <span class="type">Type: Grass</span>
-                                            <span class="type">Type: Poison</span>
-                                        </ol>
-                                </section>
-                                <section class="others">
-                                    <section class="content">
-                                        <span class="overview">Overview</span>
-                                        <span class="stats">Stats</span>
-                                        <span class="abilities">Abilities</span>
-                                    </section>
+                    <div class="pokemon">
+                        <div class="background">
+                            <section class="circle"></section>
+                            <section class="img">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                                    alt="Bulbasaur" </section>
+                            </section>
+                            <section class="pokemon-name">
+                                <span class="number">#001</span>
+                                <h1 class="name">Bulbasaur</h1>
+                                <div class="detail">
+                                    <ol class="types">
+                                        <span class="type">Type: Grass</span>
+                                        <span class="type">Type: Poison</span>
+                                    </ol>
+                            </section>
+                        </div>
+                        <header>
+                            <div class="overview-bar">
+                                <a href="#" class="action_btn">Overview</a>
+                                <div class="toggle_btn">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <div class="dropdown_menu">
+                                    <ul class="overview-content">
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btn">Overview</a>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                        </div>
+                            <div class="stats-bar">
+                                <div class="stats"><a href="a">Stats</a></div>
+                                <ul class="stats-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                            <div class="abilities-bar">
+                                <div class="abilities"><a href="a">Abilities</a></div>
+                                <ul class="abilities-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                        </header>
+
+                        <script>
+
+                            toggleBtn.onclick = function () {
+                                dropdown_menu.classList.toggle('open')
+                            }
+                        </script>
+                    </div>
                 </section>
                 <section class="page">
-                    <div class=" pokemon">
-                        <div class="border">
-                            <div class="background">
-                                <section class="circle"></section>
-                                <section class="img">
-                                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
-                                        alt="Bulbasaur" </section>
-                                </section>
-                                <section class="pokemon-name">
-                                    <span class="number">#005</span>
-                                    <h1 class="name">Bulbasaur</h1>
-                                    <div class="detail">
-                                        <ol class="types">
-                                            <span class="type">Type: Grass</span>
-                                            <span class="type">Type: Poison</span>
-                                        </ol>
-                                </section>
-                                <section class="others">
-                                    <section class="content">
-                                        <span class="overview">Overview</span>
-                                        <span class="stats">Stats</span>
-                                        <span class="abilities">Abilities</span>
-                                    </section>
+                    <div class="pokemon">
+                        <div class="background">
+                            <section class="circle"></section>
+                            <section class="img">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                                    alt="Bulbasaur" </section>
+                            </section>
+                            <section class="pokemon-name">
+                                <span class="number">#001</span>
+                                <h1 class="name">Bulbasaur</h1>
+                                <div class="detail">
+                                    <ol class="types">
+                                        <span class="type">Type: Grass</span>
+                                        <span class="type">Type: Poison</span>
+                                    </ol>
+                            </section>
+                        </div>
+                        <header>
+                            <div class="overview-bar">
+                                <a href="#" class="action_btn">Overview</a>
+                                <div class="toggle_btn">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <div class="dropdown_menu">
+                                    <ul class="overview-content">
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btn">Overview</a>
+                                    </ul>
+                                </div>
                             </div>
+                            <div class="stats-bar">
+                                <div class="stats"><a href="a">Stats</a></div>
+                                <ul class="stats-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                            <div class="abilities-bar">
+                                <div class="abilities"><a href="a">Abilities</a></div>
+                                <ul class="abilities-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                        </header>
+
+                        <script>
+
+                            toggleBtn.onclick = function () {
+                                dropdown_menu.classList.toggle('open')
+                            }
+                        </script>
+                    </div>
+                </section>
+                <section class="page">
+                    <div class="pokemon">
+                        <div class="background">
+                            <section class="circle"></section>
+                            <section class="img">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                                    alt="Bulbasaur" </section>
+                            </section>
+                            <section class="pokemon-name">
+                                <span class="number">#001</span>
+                                <h1 class="name">Bulbasaur</h1>
+                                <div class="detail">
+                                    <ol class="types">
+                                        <span class="type">Type: Grass</span>
+                                        <span class="type">Type: Poison</span>
+                                    </ol>
+                            </section>
                         </div>
-                        <div>
-                        </div>
+                        <header>
+                            <div class="overview-bar">
+                                <a href="#" class="action_btn">Overview</a>
+                                <div class="toggle_btn">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <div class="dropdown_menu">
+                                    <ul class="overview-content">
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btn">Overview</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="stats-bar">
+                                <div class="stats"><a href="a">Stats</a></div>
+                                <ul class="stats-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                            <div class="abilities-bar">
+                                <div class="abilities"><a href="a">Abilities</a></div>
+                                <ul class="abilities-content">
+                                    <!--conteudo stats-->
+                                </ul>
+                            </div>
+                        </header>
+
+                        <script>
+                            const toggle_btn = document.querySelector('.toggle_btn')
+                            const dropdown_menu = document.querySelector('.dropdown_menu')
+
+                            toggleBtn.onclick = function () {
+                                dropdown_menu.classList.toggle('open')
+                            }
+                        </script>
+                    </div>
                 </section>
             </div>
         </div>
