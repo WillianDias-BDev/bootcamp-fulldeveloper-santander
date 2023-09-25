@@ -27,6 +27,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
     <!--css local-->
     <link rel="stylesheet" href="/assets/css/global.css">
+    <!---fonte awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -52,6 +56,7 @@
                             </section>
                         </div>
                         <header>
+                            <i class="fa-solid fa-bars fa-2xl"></i>
                             <div class="overview-bar">
                                 <ul class="overview-content">
                                     <!--conteudo overview-->
@@ -69,9 +74,8 @@
 
                                     <a href="#" class="action_btn">Overview</a>
                                 </ul>
-                                <a href="#" class="action_btn">Overview</a>
                                 <div class="toggle_btn">
-                                    <i class="fa-solid fa-bars"></i>
+                                    <a href="#" class="action_btn">Overview</a>
                                 </div>
                                 <div class="dropdown_menu">
                                     <ul class="open">
@@ -88,30 +92,121 @@
                                         <p>Nona linha de exemplo para completar as 10 linhas.</p>
                                         <p>Esta é a décima e última linha deste texto de exemplo.</p>
 
-                                        <a href="#" class="action_btn">Overview</a>
+                                        <a href="#" class="action_btn"></a>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="stats-bar">
-                                <div class="stats"><a href="a">Stats</a></div>
+                            <div class="stats">
                                 <ul class="stats-content">
-                                    <!--conteudo stats-->
+                                    <!--conteudo overview-->
+                                    <p>Esta é a primeira linha de exemplo.</p>
+                                    <p>Esta é a segunda linha de exemplo.</p>
+                                    <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                    </p>
+                                    <p>A quarta linha também faz parte deste exemplo.</p>
+                                    <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                    <p>Sexta linha: mais texto de exemplo.</p>
+                                    <p>Sétima linha para continuar nosso exemplo.</p>
+                                    <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                    <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                    <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                    <a href="#" class="action_btns"></a>
                                 </ul>
+                                <div class="toggle_btns">
+                                    <a href="#" class="action_btns">Stats</a>
+                                </div>
+                                <div class="dropdown_menus">
+                                    <ul class="open">
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btns"></a>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="abilities-bar">
-                                <div class="abilities"><a href="a">Abilities</a></div>
-                                <ul class="abilities-content">
-                                    <!--conteudo stats-->
+                            <div class="habilities">
+                                <ul class="habilities-content">
+                                    <!--conteudo overview-->
+                                    <p>Esta é a primeira linha de exemplo.</p>
+                                    <p>Esta é a segunda linha de exemplo.</p>
+                                    <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                    </p>
+                                    <p>A quarta linha também faz parte deste exemplo.</p>
+                                    <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                    <p>Sexta linha: mais texto de exemplo.</p>
+                                    <p>Sétima linha para continuar nosso exemplo.</p>
+                                    <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                    <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                    <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                    <a href="#" class="action_btnh"></a>
                                 </ul>
+                                <div class="toggle_btnh">
+                                    <a href="#" class="action_btnh">habilities</a>
+                                </div>
+                                <div class="dropdown_menuh">
+                                    <ul class="open">
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btnh"></a>
+                                    </ul>
+                                </div>
                             </div>
                         </header>
 
                         <script>
-
+                            const toggleBtn = document.querySelector('.toggle_btn')
+                            const toggleIcon = document.querySelector('.toggle_btn i')
+                            const dropdownMenu = document.querySelector('.dropdown_menu')
 
                             toggleBtn.onclick = function () {
-                                dropdown_menu.classList.toggle('open')
+                                dropdownMenu.classList.toggle('open')
                             }
+
+                        </script>
+
+                        <script>
+                            const toggleBtns = document.querySelector('.toggle_btns')
+                            const toggleIcons = document.querySelector('.toggle_btns i')
+                            const dropdownMenus = document.querySelector('.dropdown_menus')
+
+                            toggleBtns.onclick = function () {
+                                dropdownMenus.classList.toggle('open')
+                            }
+
+                        </script>
+
+                        <script>
+                            const toggleBtnh = document.querySelector('.toggle_btnh')
+                            const toggleIconh = document.querySelector('.toggle_btnh i')
+                            const dropdownMenuh = document.querySelector('.dropdown_menuh')
+
+                            toggleBtnh.onclick = function () {
+                                dropdownMenuh.classList.toggle('open')
+                            }
+
                         </script>
                     </div>
                 </section>
