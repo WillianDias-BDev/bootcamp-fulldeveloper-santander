@@ -55,8 +55,62 @@
                                     </ol>
                             </section>
                         </div>
+                        <header class="top">
+                            <div class="bar">
+                                <div class="bar-content">
+                                    <div class="scroll">
+                                        <div class="box"></div>
+
+                                        <!--conteudo overview-->
+                                        <p>Esta é a primeira linha de exemplo.</p>
+                                        <p>Esta é a segunda linha de exemplo.</p>
+                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
+                                        </p>
+                                        <p>A quarta linha também faz parte deste exemplo.</p>
+                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
+                                        <p>Sexta linha: mais texto de exemplo.</p>
+                                        <p>Sétima linha para continuar nosso exemplo.</p>
+                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
+                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
+                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
+
+                                        <a href="#" class="action_btnb"><i class="fa-solid fa-bars fa-2xl"></i></a>
+                                    </div>
+                                </div>
+                                <div class="toggle_btnb">
+                                    <a href="#" class="action_btnb"><i class="fa-solid fa-bars fa-2xl"></i></a>
+                                </div>
+                                <div class="dropdown_menub">
+                                    <div class="open">
+                                        <div class="scroll">
+                                            <div class="box">#001 - Bulbasaur</div>
+                                            <div class="box">#002 - Ivysaur</div>
+                                            <div class="box">#003 - Venusaur</div>
+                                            <div class="box">#004 - Charmander</div>
+                                            <div class="box">#005 - Charmeleon</div>
+                                            <div class="box">#006 - Charizard</div>
+                                            <div class="box">#007 - Squirtle</div>
+                                            <div class="box">#008 - Wartortle</div>
+                                            <div class="box">#009 - Blastoise</div>
+                                            <div class="box">#010 - Caterpie</div>
+                                            <div class="box">#011 - Metapod</div>
+
+
+                                            <a href="#" class="action_btnb"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <div class="icon"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></div>
+                                <div class="input">
+                                    <input type="text" placeholder="Search" id="mysearch">
+                                </div>
+                                <span class="clear" onclick="document.getElementById('mysearch').value = ''"
+                                    id="myclear"></span>
+                            </div>
+                        </header>
                         <header>
-                            <i class="fa-solid fa-bars fa-2xl"></i>
                             <div class="overview-bar">
                                 <ul class="overview-content">
                                     <!--conteudo overview-->
@@ -175,382 +229,103 @@
                                 </div>
                             </div>
                         </header>
-
-                        <script>
-                            const toggleBtn = document.querySelector('.toggle_btn')
-                            const toggleIcon = document.querySelector('.toggle_btn i')
-                            const dropdownMenu = document.querySelector('.dropdown_menu')
-
-                            toggleBtn.onclick = function () {
-                                dropdownMenu.classList.toggle('open')
-                            }
-
-                        </script>
-
-                        <script>
-                            const toggleBtns = document.querySelector('.toggle_btns')
-                            const toggleIcons = document.querySelector('.toggle_btns i')
-                            const dropdownMenus = document.querySelector('.dropdown_menus')
-
-                            toggleBtns.onclick = function () {
-                                dropdownMenus.classList.toggle('open')
-                            }
-
-                        </script>
-
-                        <script>
-                            const toggleBtnh = document.querySelector('.toggle_btnh')
-                            const toggleIconh = document.querySelector('.toggle_btnh i')
-                            const dropdownMenuh = document.querySelector('.dropdown_menuh')
-
-                            toggleBtnh.onclick = function () {
-                                dropdownMenuh.classList.toggle('open')
-                            }
-
-                        </script>
-                    </div>
-                </section>
-                <section class="page">
-                    <div class="pokemon">
-                        <div class="background">
-                            <section class="circle"></section>
-                            <section class="img">
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                                    alt="Bulbasaur" </section>
-                            </section>
-                            <section class="pokemon-name">
-                                <span class="number">#001</span>
-                                <h1 class="name">Bulbasaur</h1>
-                                <div class="detail">
-                                    <ol class="types">
-                                        <span class="type">Type: Grass</span>
-                                        <span class="type">Type: Poison</span>
-                                    </ol>
-                            </section>
-                        </div>
-                        <header>
-                            <div class="overview-bar">
-                                <a href="#" class="action_btn">Overview</a>
-                                <div class="toggle_btn">
-                                    <i class="fa-solid fa-bars"></i>
-                                </div>
-                                <div class="dropdown_menu">
-                                    <ul class="overview-content">
-                                        <!--conteudo overview-->
-                                        <p>Esta é a primeira linha de exemplo.</p>
-                                        <p>Esta é a segunda linha de exemplo.</p>
-                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
-                                        </p>
-                                        <p>A quarta linha também faz parte deste exemplo.</p>
-                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
-                                        <p>Sexta linha: mais texto de exemplo.</p>
-                                        <p>Sétima linha para continuar nosso exemplo.</p>
-                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
-                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
-                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
-
-                                        <a href="#" class="action_btn">Overview</a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="stats-bar">
-                                <div class="stats"><a href="a">Stats</a></div>
-                                <ul class="stats-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                            <div class="abilities-bar">
-                                <div class="abilities"><a href="a">Abilities</a></div>
-                                <ul class="abilities-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                        </header>
-
-                        <script>
-
-                            toggleBtn.onclick = function () {
-                                dropdown_menu.classList.toggle('open')
-                            }
-                        </script>
-                    </div>
-                </section>
-                <section class="page">
-                    <div class="pokemon">
-                        <div class="background">
-                            <section class="circle"></section>
-                            <section class="img">
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                                    alt="Bulbasaur" </section>
-                            </section>
-                            <section class="pokemon-name">
-                                <span class="number">#001</span>
-                                <h1 class="name">Bulbasaur</h1>
-                                <div class="detail">
-                                    <ol class="types">
-                                        <span class="type">Type: Grass</span>
-                                        <span class="type">Type: Poison</span>
-                                    </ol>
-                            </section>
-                        </div>
-                        <header>
-                            <div class="overview-bar">
-                                <a href="#" class="action_btn">Overview</a>
-                                <div class="toggle_btn">
-                                    <i class="fa-solid fa-bars"></i>
-                                </div>
-                                <div class="dropdown_menu">
-                                    <ul class="overview-content">
-                                        <!--conteudo overview-->
-                                        <p>Esta é a primeira linha de exemplo.</p>
-                                        <p>Esta é a segunda linha de exemplo.</p>
-                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
-                                        </p>
-                                        <p>A quarta linha também faz parte deste exemplo.</p>
-                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
-                                        <p>Sexta linha: mais texto de exemplo.</p>
-                                        <p>Sétima linha para continuar nosso exemplo.</p>
-                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
-                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
-                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
-
-                                        <a href="#" class="action_btn">Overview</a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="stats-bar">
-                                <div class="stats"><a href="a">Stats</a></div>
-                                <ul class="stats-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                            <div class="abilities-bar">
-                                <div class="abilities"><a href="a">Abilities</a></div>
-                                <ul class="abilities-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                        </header>
-
-                        <script>
-
-                            toggleBtn.onclick = function () {
-                                dropdown_menu.classList.toggle('open')
-                            }
-                        </script>
-                    </div>
-                </section>
-                <section class="page">
-                    <div class="pokemon">
-                        <div class="background">
-                            <section class="circle"></section>
-                            <section class="img">
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                                    alt="Bulbasaur" </section>
-                            </section>
-                            <section class="pokemon-name">
-                                <span class="number">#001</span>
-                                <h1 class="name">Bulbasaur</h1>
-                                <div class="detail">
-                                    <ol class="types">
-                                        <span class="type">Type: Grass</span>
-                                        <span class="type">Type: Poison</span>
-                                    </ol>
-                            </section>
-                        </div>
-                        <header>
-                            <div class="overview-bar">
-                                <a href="#" class="action_btn">Overview</a>
-                                <div class="toggle_btn">
-                                    <i class="fa-solid fa-bars"></i>
-                                </div>
-                                <div class="dropdown_menu">
-                                    <ul class="overview-content">
-                                        <!--conteudo overview-->
-                                        <p>Esta é a primeira linha de exemplo.</p>
-                                        <p>Esta é a segunda linha de exemplo.</p>
-                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
-                                        </p>
-                                        <p>A quarta linha também faz parte deste exemplo.</p>
-                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
-                                        <p>Sexta linha: mais texto de exemplo.</p>
-                                        <p>Sétima linha para continuar nosso exemplo.</p>
-                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
-                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
-                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
-
-                                        <a href="#" class="action_btn">Overview</a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="stats-bar">
-                                <div class="stats"><a href="a">Stats</a></div>
-                                <ul class="stats-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                            <div class="abilities-bar">
-                                <div class="abilities"><a href="a">Abilities</a></div>
-                                <ul class="abilities-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                        </header>
-
-                        <script>
-
-                            toggleBtn.onclick = function () {
-                                dropdown_menu.classList.toggle('open')
-                            }
-                        </script>
-                    </div>
-                </section>
-                <section class="page">
-                    <div class="pokemon">
-                        <div class="background">
-                            <section class="circle"></section>
-                            <section class="img">
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                                    alt="Bulbasaur" </section>
-                            </section>
-                            <section class="pokemon-name">
-                                <span class="number">#001</span>
-                                <h1 class="name">Bulbasaur</h1>
-                                <div class="detail">
-                                    <ol class="types">
-                                        <span class="type">Type: Grass</span>
-                                        <span class="type">Type: Poison</span>
-                                    </ol>
-                            </section>
-                        </div>
-                        <header>
-                            <div class="overview-bar">
-                                <a href="#" class="action_btn">Overview</a>
-                                <div class="toggle_btn">
-                                    <i class="fa-solid fa-bars"></i>
-                                </div>
-                                <div class="dropdown_menu">
-                                    <ul class="overview-content">
-                                        <!--conteudo overview-->
-                                        <p>Esta é a primeira linha de exemplo.</p>
-                                        <p>Esta é a segunda linha de exemplo.</p>
-                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
-                                        </p>
-                                        <p>A quarta linha também faz parte deste exemplo.</p>
-                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
-                                        <p>Sexta linha: mais texto de exemplo.</p>
-                                        <p>Sétima linha para continuar nosso exemplo.</p>
-                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
-                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
-                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
-
-                                        <a href="#" class="action_btn">Overview</a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="stats-bar">
-                                <div class="stats"><a href="a">Stats</a></div>
-                                <ul class="stats-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                            <div class="abilities-bar">
-                                <div class="abilities"><a href="a">Abilities</a></div>
-                                <ul class="abilities-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                        </header>
-
-                        <script>
-
-                            toggleBtn.onclick = function () {
-                                dropdown_menu.classList.toggle('open')
-                            }
-                        </script>
-                    </div>
-                </section>
-                <section class="page">
-                    <div class="pokemon">
-                        <div class="background">
-                            <section class="circle"></section>
-                            <section class="img">
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                                    alt="Bulbasaur" </section>
-                            </section>
-                            <section class="pokemon-name">
-                                <span class="number">#001</span>
-                                <h1 class="name">Bulbasaur</h1>
-                                <div class="detail">
-                                    <ol class="types">
-                                        <span class="type">Type: Grass</span>
-                                        <span class="type">Type: Poison</span>
-                                    </ol>
-                            </section>
-                        </div>
-                        <header>
-                            <div class="overview-bar">
-                                <a href="#" class="action_btn">Overview</a>
-                                <div class="toggle_btn">
-                                    <i class="fa-solid fa-bars"></i>
-                                </div>
-                                <div class="dropdown_menu">
-                                    <ul class="overview-content">
-                                        <!--conteudo overview-->
-                                        <p>Esta é a primeira linha de exemplo.</p>
-                                        <p>Esta é a segunda linha de exemplo.</p>
-                                        <p>Na terceira linha, podemos continuar a adicionar mais texto de exemplo.
-                                        </p>
-                                        <p>A quarta linha também faz parte deste exemplo.</p>
-                                        <p>A quinta linha demonstra que podemos ter várias linhas.</p>
-                                        <p>Sexta linha: mais texto de exemplo.</p>
-                                        <p>Sétima linha para continuar nosso exemplo.</p>
-                                        <p>Oitava linha, porque mais exemplos são sempre úteis.</p>
-                                        <p>Nona linha de exemplo para completar as 10 linhas.</p>
-                                        <p>Esta é a décima e última linha deste texto de exemplo.</p>
-
-                                        <a href="#" class="action_btn">Overview</a>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="stats-bar">
-                                <div class="stats"><a href="a">Stats</a></div>
-                                <ul class="stats-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                            <div class="abilities-bar">
-                                <div class="abilities"><a href="a">Abilities</a></div>
-                                <ul class="abilities-content">
-                                    <!--conteudo stats-->
-                                </ul>
-                            </div>
-                        </header>
-
-                        <script>
-                            const toggle_btn = document.querySelector('.toggle_btn')
-                            const dropdown_menu = document.querySelector('.dropdown_menu')
-
-                            toggleBtn.onclick = function () {
-                                dropdown_menu.classList.toggle('open')
-                            }
-                        </script>
                     </div>
                 </section>
             </div>
         </div>
     </div>
 
+    <script>
+        const searchInput = document.getElementById('mysearch');
+        const clearButton = document.getElementById('myclear');
+
+        // Função para verificar o estado inicial
+        function checkInitialState() {
+            if (searchInput.value.trim() === '') {
+                clearButton.style.opacity = '0';
+            } else {
+                clearButton.style.opacity = '1';
+            }
+        }
+
+        // Verifique o estado inicial ao carregar a página
+        checkInitialState();
+
+        // Adicione um ouvinte de evento de entrada
+        searchInput.addEventListener('input', () => {
+            if (searchInput.value.trim() !== '') {
+                clearButton.style.opacity = '1';
+            } else {
+                clearButton.style.opacity = '0';
+            }
+        });
+
+        // Adicione um ouvinte de evento de clique ao botão de limpar
+        clearButton.addEventListener('click', () => {
+            searchInput.value = '';
+            clearButton.style.opacity = '0';
+        });
+    </script>
+
+    <script>
+        const icon = document.querySelector('.icon');
+        const search = document.querySelector('.search');
+
+        icon.onclick = function () {
+            search.classList.toggle('active')
+        }
 
 
-    <button id="prevButton">Anterior</button>
-    <button id="nextButton">Próxima</button>
+    </script>
 
+    <script>
+        const toggleBtnb = document.querySelector('.toggle_btnb')
+        const toggleIconb = document.querySelector('.toggle_btnb i')
+        const dropdownMenub = document.querySelector('.dropdown_menub')
 
+        toggleBtnb.onclick = function () {
+            dropdownMenub.classList.toggle('open')
+            const isOpen = dropdownMenub.classList.contains('open')
 
+            toggleIconb.classList = isOpen
+                ? 'fa-solid fa-xmark fa-2xl'
+                : 'fa-solid fa-bars fa-2xl'
+        }
 
+    </script>
 
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown_menu')
 
+        toggleBtn.onclick = function () {
+            dropdownMenu.classList.toggle('open')
+        }
+
+    </script>
+
+    <script>
+        const toggleBtns = document.querySelector('.toggle_btns')
+        const toggleIcons = document.querySelector('.toggle_btns i')
+        const dropdownMenus = document.querySelector('.dropdown_menus')
+
+        toggleBtns.onclick = function () {
+            dropdownMenus.classList.toggle('open')
+        }
+
+    </script>
+
+    <script>
+        const toggleBtnh = document.querySelector('.toggle_btnh')
+        const toggleIconh = document.querySelector('.toggle_btnh i')
+        const dropdownMenuh = document.querySelector('.dropdown_menuh')
+
+        toggleBtnh.onclick = function () {
+            dropdownMenuh.classList.toggle('open')
+        }
+
+    </script>
 
     <script src="/assets/js/main.js"></script>
 

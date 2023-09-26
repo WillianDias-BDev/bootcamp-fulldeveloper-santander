@@ -90,7 +90,7 @@ body {
 
 
 .pokemon-name .number {
-    margin-left: 130px;
+    margin-left: 100px;
     font-family: 'Bodoni Moda', serif;
     background-color: rgba(0, 0, 0, 0.183);
     padding: 0.2rem 0.8rem 0.2rem 0.5rem;
@@ -166,7 +166,6 @@ body {
     align-items: center;
     border: 30px solid transparent;
     border-radius: 40px;
-    background-size: 90% 90%;
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.7), 5px 5px 10px rgba(128, 128, 128, 0.7);
 }
 
@@ -193,12 +192,13 @@ header {
     align-items: center;
     justify-content: space-between;
     /* Isso alinhará os elementos à esquerda e à direita */
-    left: 50px;
-    top: -90px;
+    left: 60px;
+    top: -100px;
+    margin: -10px;
 }
 
 header div {
-    margin-right: 50px;
+    margin-right: 65px;
     /* Ajuste a margem desejada entre as palavras */
 }
 
@@ -437,4 +437,324 @@ header div {
     .dropdown_menuh {
         display: block;
     }
+}
+
+/* bar bottom */
+
+.top {
+    top: -78rem;
+    margin: -27px;
+}
+
+.action_btnb {
+    color: #000000;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.bar .toggle_btnb {
+    color: #e8e3e7;
+    cursor: pointer;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btnb:hover {
+    scale: 1.5rem;
+    color: #e8e3e7;
+}
+
+
+.bar-content {
+    position: absolute;
+    background-color: #e8e3e7;
+    border-radius: 10%;
+    top: -420px;
+    padding: 2rem;
+    right: 65px;
+    left: -35px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menub {
+    display: none;
+    position: absolute;
+    background-color: #e8e3e7;
+    opacity: 0;
+    height: 0;
+    border-radius: 10%;
+    top: -506px;
+    padding: 2rem;
+    right: 20px;
+    left: -35px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 30px solid#e8e3e7;
+}
+
+.dropdown_menub ul {
+    padding: 0.7rem;
+}
+
+.dropdown_menub.open {
+    height: 430px;
+    opacity: 1;
+    top: 5rem;
+    left: -17px;
+    right: 35px;
+}
+
+.dropdown_menub .action_btnb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*responsive design*/
+@media(max-width: 1978px) {
+    .bar .bar-content {
+        display: none;
+    }
+
+    .bar .toggle_btnb {
+        display: block;
+    }
+
+    .dropdown_menub {
+        display: block;
+    }
+}
+
+/* search bar*/
+
+.search {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: -37px;
+    border-radius: 60px;
+    transition: 0.5s;
+    overflow: hidden;
+    opacity: 0.5;
+    background: #ffffff;
+
+}
+
+.icon {
+    position: absolute;
+    top: 20px;
+    left: 14px;
+}
+
+.search .icon {
+    cursor: pointer;
+    z-index: 1000;
+
+}
+
+.search .icon:hover {
+    color: #e8e3e7;
+}
+
+.search.active {
+    width: 384px;
+    background: #ffffff;
+    opacity: 0.5;
+}
+
+.search .input {
+    position: relative;
+    width: 280px;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.search .input input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.clear {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+.clear::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #000000;
+    transform: rotate(45deg);
+}
+
+.clear::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #000000;
+    transform: rotate(315deg);
+}
+
+
+#app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Centraliza verticalmente os botões */
+    height: 100vh;
+    /* Altura total da tela */
+    background-color: lightgray;
+    /* Apenas para visualização */
+    padding: 10px;
+    /* Espaço ao redor dos círculos */
+}
+
+#prevButton,
+#nextButton {
+    width: 50px;
+    /* Diâmetro dos círculos */
+    height: 50px;
+    /* Diâmetro dos círculos */
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #e8e3e7;
+    background: #e8e3e7;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.7), 5px 5px 10px rgba(128, 128, 128, 0.7);
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 500px;
+    padding: 15px 2%;
+    overflow-y: scroll;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0, 3);
+    top: 18rem;
+}
+
+.box {
+    width: 100%;
+    height: 50px;
+    background: #a7aadc;
+    border-radius: 15px;
+    margin: 20px 0;
+    font-size: 30px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 12px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #b4bee2;
+    border-radius: 60px;
+}
+
+.normal {
+    background-color: #94d4ce;
+}
+
+.grass {
+    background-color: #c2bfe5;
+}
+
+.fire {
+    background-color: #b6efb8;
+}
+
+.water {
+    background-color: #dfa9d5;
+}
+
+.electric {
+    background-color: #afe0d3;
+}
+
+.ice {
+    background-color: #e6bbd7;
+}
+
+.ground {
+    background-color: #d5f2e6;
+}
+
+.flying {
+    background-color: #e6c9bb;
+}
+
+.poison {
+    background-color: #b6cde2;
+}
+
+.fighting {
+    background-color: #b4e2ab;
+}
+
+.psychic {
+    background-color: #a7aadc;
+}
+
+.dark {
+    background-color: #c2edc2;
+}
+
+.rock {
+    background-color: #c1ece8;
+}
+
+.bug {
+    background-color: #dcc3a6;
+}
+
+.ghost {
+    background-color: #dadca5;
+}
+
+.steel {
+    background-color: #e4b5c4;
+}
+
+.dragon {
+    background-color: #b5e3b2;
+}
+
+.fairy {
+    background-color: #b4bee2;
 }
