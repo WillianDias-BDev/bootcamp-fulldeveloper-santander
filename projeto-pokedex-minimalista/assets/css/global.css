@@ -666,13 +666,12 @@ header div {
 .box {
     width: 100%;
     height: 50px;
-    background: #a7aadc;
     border-radius: 15px;
     margin: 20px 0;
     font-size: 30px;
     padding: 4px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -683,7 +682,7 @@ header div {
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background-color: #b4bee2;
+    background-color: #c4c4c4;
     border-radius: 60px;
 }
 
@@ -757,4 +756,23 @@ header div {
 
 .fairy {
     background-color: #b4bee2;
+}
+
+.box .name {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 27px;
+}
+
+.box .number {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 25px;
+}
+
+.box span {
+    padding: 5px;
+}
+
+.box .type {
+    font-size: 22px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
