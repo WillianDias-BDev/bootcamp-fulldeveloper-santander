@@ -18,19 +18,25 @@ body {
 
 
 .background {
-    background-color: #c2bfe5;
     width: 100%;
     border-radius: 40px;
     margin-bottom: 20px;
+    height: 80rem;
 }
 
 
 
 
-
-.name {
+.name2 {
     font-family: 'Bodoni Moda', serif;
-    font-size: 60px;
+    font-size: 65px;
+    position: absolute;
+    margin: 0px;
+    top: -2rem;
+    width: 110%;
+    text-align: center;
+    padding: 5rem;
+    right: -5rem;
 
 }
 
@@ -43,9 +49,7 @@ body {
 
 .types span {
     display: block;
-    /* Define os elementos como blocos */
-    left: 50px;
-    /* Outras propriedades de estilo, se necessário */
+
 }
 
 
@@ -57,7 +61,6 @@ body {
     left: 133px;
     max-width: 50%;
     max-height: 50%;
-    /* Defina um valor adequado para o tamanho máximo */
     align-items: center;
 }
 
@@ -101,26 +104,23 @@ body {
 
 .detail {
     display: flex;
-    /* Torna o conteúdo filho flexível */
     flex-direction: column;
-    /* Empilha os elementos verticalmente */
     align-items: center;
-    /* Centraliza os elementos horizontalmente */
-    font-size: 17px;
+    font-size: 26px;
+    position: absolute;
+    top: 9rem;
+    left: 5rem;
 }
 
 .types {
     list-style: none;
-    /* Remove marcadores de lista */
-    padding: 0;
-    /* Remove o preenchimento padrão da lista */
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 22px;
 }
 
 .type {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    /* Adicione qualquer estilo de fonte ou tamanho desejado */
     margin: 5px 0;
-    /* Espaçamento vertical entre as palavras */
 }
 
 
@@ -130,7 +130,6 @@ body {
     width: 100%;
     display: flex;
     transition: transform 0.5s ease;
-    /* Transição suave para o contêiner */
 }
 
 .page {
@@ -141,15 +140,12 @@ body {
     transition: transform 0.5s ease;
     width: 100%;
     flex-shrink: 0;
-    /* Transição suave para cada página */
 }
 
 
 .page.hidden {
     transform: translateX(100%);
-    /* Esconda as páginas que não estão na visualização */
     transition: transform 0.5s ease;
-    /* Adicione a transição apenas a páginas ocultas */
 }
 
 .border-overlay {
@@ -191,7 +187,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Isso alinhará os elementos à esquerda e à direita */
     left: 60px;
     top: -100px;
     margin: -10px;
@@ -199,7 +194,6 @@ header {
 
 header div {
     margin-right: 65px;
-    /* Ajuste a margem desejada entre as palavras */
 }
 
 .action_btn {
@@ -660,7 +654,7 @@ header div {
     padding: 15px 2%;
     overflow-y: scroll;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0, 3);
-    top: 18rem;
+    top: 17rem;
 }
 
 .box {
@@ -695,11 +689,11 @@ header div {
 }
 
 .fire {
-    background-color: #b6efb8;
+    background-color: #B0D9B1;
 }
 
 .water {
-    background-color: #dfa9d5;
+    background-color: #F2D8D8;
 }
 
 .electric {
@@ -711,7 +705,7 @@ header div {
 }
 
 .ground {
-    background-color: #d5f2e6;
+    background-color: #C4DFDF;
 }
 
 .flying {
@@ -727,7 +721,7 @@ header div {
 }
 
 .psychic {
-    background-color: #a7aadc;
+    background-color: #DFCCFB;
 }
 
 .dark {
@@ -735,7 +729,7 @@ header div {
 }
 
 .rock {
-    background-color: #c1ece8;
+    background-color: #D2E9E9;
 }
 
 .bug {

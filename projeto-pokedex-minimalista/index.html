@@ -43,11 +43,11 @@
                             <section class="circle"></section>
                             <section class="img">
                                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                                    alt="Bulbasaur" </section>
+                                    alt="" id="pokemonImage" </section>
                             </section>
                             <section class="pokemon-name">
                                 <span class="number">#001</span>
-                                <h1 class="name">Bulbasaur</h1>
+                                <span class="name2">Bulbasaur</span>
                                 <div class="detail">
                                     <ol class="types">
                                         <span class="type">Type: Grass</span>
@@ -90,7 +90,8 @@
                             <div class="search">
                                 <div class="icon"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></div>
                                 <div class="input">
-                                    <input type="text" placeholder="Search" id="mysearch">
+                                    <input type="text" placeholder="Search" id="mysearch"
+                                        onkeydown="searchOnEnter(event)">
                                 </div>
                                 <span class="clear" onclick="document.getElementById('mysearch').value = ''"
                                     id="myclear"></span>

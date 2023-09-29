@@ -45,7 +45,7 @@ class Pokemon {
     }
 }
 
-const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151'; // Solicita os 151 primeiros Pokémon
+const apiUrl = 'https://pokeapi.co/api/v2/pokemon?limit=151';
 
 fetch(apiUrl)
     .then(response => response.json())
