@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/assets/js/pokemon-detail.js"></script>
+
 </head>
 
 <body>
@@ -111,7 +113,8 @@
                                         </div>
                                         <div class="pokemon-detail-wrap">
                                             <div class="pokemon-detail">
-                                                <div class="icon-height"><i class="fa-solid fa-ruler-vertical"></i>
+                                                <div class="icon-height"><i class="fa-solid fa-ruler-vertical"
+                                                        class="straigten"></i>
                                                 </div>
                                             </div>
                                             <p class="captions-fonts">Height</p>
@@ -229,32 +232,13 @@
 
     </script>
 
-    <script>
-        const toggleBtns = document.querySelector('.toggle_btns')
-        const toggleIcons = document.querySelector('.toggle_btns i')
-        const dropdownMenus = document.querySelector('.dropdown_menus')
 
-        toggleBtns.onclick = function () {
-            dropdownMenus.classList.toggle('open')
-        }
-
-    </script>
-
-    <script>
-        const toggleBtnh = document.querySelector('.toggle_btnh')
-        const toggleIconh = document.querySelector('.toggle_btnh i')
-        const dropdownMenuh = document.querySelector('.dropdown_menuh')
-
-        toggleBtnh.onclick = function () {
-            dropdownMenuh.classList.toggle('open')
-        }
-
-    </script>
 
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/pokemon-detail.js"></script>
+
+
 
 
 </body>
