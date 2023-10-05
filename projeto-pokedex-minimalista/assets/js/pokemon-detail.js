@@ -1,5 +1,18 @@
 let currentPokemonId = null;
 
+// Adicione um ouvinte de evento para carregar o Pokémon quando a página for carregada
+document.addEventListener("DOMContentLoaded", () => {
+    const MAX_POKEMONS = 151;
+    const pokemonID = new URLSearchParams(window.location.search).get("id");
+    const id = parseInt(pokemonID, 10);
+
+    if (id < 1 || id > MAX_POKEMONS) {
+        return (window.location.href = "../index.html");
+    }
+
+    currentPokemonId = id;
+    loadPokemon(id);
+});
 // Função para exibir os detalhes do Pokémon nos elementos HTML
 function displayPokemonDetails(pokemon) {
     const { name, id, types, weight, height, abilities, stats } = pokemon;
@@ -85,19 +98,6 @@ async function loadPokemon(id) {
 }
 
 
-// Adicione um ouvinte de evento para carregar o Pokémon quando a página for carregada
-document.addEventListener("DOMContentLoaded", () => {
-    const MAX_POKEMONS = 151;
-    const pokemonID = new URLSearchParams(window.location.search).get("id");
-    const id = parseInt(pokemonID, 10);
-
-    if (id < 1 || id > MAX_POKEMONS) {
-        return (window.location.href = "./index.html");
-    }
-
-    currentPokemonId = id;
-    loadPokemon(id);
-});
 
 const typeColors = {
     normal: "#94d4ce",
