@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = parseInt(pokemonID, 10);
 
     if (id < 1 || id > MAX_POKEMONS) {
-        return (window.location.href = "../index.html");
+        return (window.location.href = "./index.html");
     }
 
     currentPokemonId = id;
@@ -30,7 +30,7 @@ async function loadPokemon(id) {
             }),
         ]);
 
-        // Resto do seu código aqui...
+
     } catch (error) {
         console.error("An error occured while fetching Pokemon data:", error);
         return false;
@@ -81,7 +81,7 @@ async function loadPokemon(id) {
 
         return true;
     } catch (error) {
-        console.error("An error occured while fetching Pokemon data:", error);
+        console.error("An error occured while fetching Pokemon data:");
         return false;
     }
 }
