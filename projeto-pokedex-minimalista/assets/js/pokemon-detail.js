@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPokemon(id);
 });
 
+const pokemonID = new URLSearchParams(window.location.search).get("id");
+const id = parseInt(pokemonID, 10);
+
+if (isNaN(id) || id < 1 || id > MAX_POKEMONS) {
+    return (window.location.href = "./index.html");
+}
+
 async function loadPokemon(id) {
     try {
         const [pokemon, pokemonSpecies] = await Promise.all([
