@@ -2,7 +2,7 @@ const pokemonData = {}; // Objeto para armazenar os dados dos Pokémon
 
 // Função para carregar dados dos primeiros 151 Pokémon
 async function loadPokemonData() {
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 1; i <= 5; i++) {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
         const data = await response.json();
         pokemonData[i] = data;
