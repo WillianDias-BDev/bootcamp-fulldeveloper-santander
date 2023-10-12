@@ -6,6 +6,8 @@ Certamente, abaixo está um exemplo de um README básico para o projeto:
 
 O **Projeto Pokedex Minimalista** é uma aplicação web simples que carrega informações sobre os primeiros 151 Pokémon da série usando a PokeAPI. A aplicação permite aos usuários procurar e exibir detalhes de Pokémon por nome ou número.
 
+[![](https://mermaid.ink/img/pako:eNpFjk0KwkAMha8yZN1eoIJQ6UZwUepOp4vQiTrUzozzA0rpeTyBJ-jFjBY0q-TlfckbobOKoABpzh7dReyalTSCq3TuWNueFN1bkeeioVvSQc_P-UWBhbXYoOlshcqGr7Gst-2C_hcLGJwNEReIz0oDGQzkB9SKP48fSEK80EASCm4V-l5yool9mKLdP0wHxQmvgTJITmGkSiPnHX6qQ3OwlufoE01vDaVIOg?type=png)](https://mermaid.live/edit#pako:eNpFjk0KwkAMha8yZN1eoIJQ6UZwUepOp4vQiTrUzozzA0rpeTyBJ-jFjBY0q-TlfckbobOKoABpzh7dReyalTSCq3TuWNueFN1bkeeioVvSQc_P-UWBhbXYoOlshcqGr7Gst-2C_hcLGJwNEReIz0oDGQzkB9SKP48fSEK80EASCm4V-l5yool9mKLdP0wHxQmvgTJITmGkSiPnHX6qQ3OwlufoE01vDaVIOg)
+
 ## Funcionalidades
 
 - Carrega dados dos primeiros 151 Pokémon da PokeAPI.
