@@ -1,7 +1,3 @@
-Certamente, abaixo está um exemplo de um README básico para o projeto:
-
----
-
 # Projeto Pokedex Minimalista
 
 O **Projeto Pokedex Minimalista** é uma aplicação web simples que carrega informações sobre os primeiros 151 Pokémon da série usando a PokeAPI. A aplicação permite aos usuários procurar e exibir detalhes de Pokémon por nome ou número.
